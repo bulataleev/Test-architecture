@@ -1,2 +1,2 @@
 # Test-architecture
-play around with json, docker, sql
+this is a play around with json, docker, sql
