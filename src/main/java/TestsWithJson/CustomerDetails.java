@@ -3,8 +3,8 @@ package TestsWithJson;
 public class CustomerDetails {
     private String courseName;
     private String purchaseDate;
-    private int Amount;
-    private String Location;
+    private int amount;
+    private String location;
 
     public String getCourseName() {
         return courseName;
@@ -15,11 +15,11 @@ public class CustomerDetails {
     }
 
     public int getAmount() {
-        return Amount;
+        return amount;
     }
 
     public String getLocation() {
-        return Location;
+        return location;
     }
 
     public void setCourseName(String courseName) {
@@ -31,11 +31,11 @@ public class CustomerDetails {
     }
 
     public void setAmount(int amount) {
-        Amount = amount;
+        this.amount = amount;
     }
 
     public void setLocation(String location) {
-        Location = location;
+        this.location = location;
     }
 
 
