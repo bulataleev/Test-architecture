@@ -3,6 +3,7 @@ package TestsWithJson;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamsOperations {
@@ -29,6 +30,13 @@ public class StreamsOperations {
         Stream<String> newStream = Stream.concat(names.stream(), nameList.stream());
         //newStream.forEach(i-> System.out.println(i)); todo: stream has already been operated upon or closed
         System.out.println(newStream.anyMatch(s->s.equalsIgnoreCase("ads")));
+
+        //converting stream to lits
+        List<String> listFromStream =
+                Stream.of("asdf","sdfg","436","vbn","aqwrewrt").filter(i->i.endsWith("f")).
+                        map(i->i.toUpperCase()).collect(Collectors.toList());
+        System.out.println(listFromStream.get(0));
+        listFromStream.stream(). forEach(i-> System.out.println(i));
 
     }
 }
